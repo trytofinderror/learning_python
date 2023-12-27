@@ -7,7 +7,7 @@ def spent_calories(
         dist: float = 9.75,
         hours: float = 2,
         minutes: float = 120
-):
+) -> Decimal:
     return Decimal((0.035 * weight + (dist / hours) ** 2 / height * 0.029 * weight) * minutes)
 
 
