@@ -1,7 +1,6 @@
-
 def get_quarter(
-        x=0,
-        y=0
+        x: float = 0,
+        y: float = 0
 ):
     if x > 0 and y > 0:
         return "Первая четверть"
@@ -14,6 +13,7 @@ def get_quarter(
     else:
         return "X и Y должны быть отличны от нуля"
 
+
 print(
-    get_quarter(3,-1)
+    get_quarter(3, -1)
 )
