@@ -1,7 +1,7 @@
 def get_quarter(
         x: float = 0,
         y: float = 0
-):
+) -> str:
     if x > 0 and y > 0:
         return "Первая четверть"
     elif x < 0 and y > 0:
