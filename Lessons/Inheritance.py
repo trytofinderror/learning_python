@@ -17,6 +17,10 @@ class Car:
 class BMW(Car):  # Наследуем от Car
     is_M_model: bool = False
 
+    def print_all(self) -> None:
+        print("This is BWM")
+        super().print_all() #Обращение к методу родителя
+
 
 x3_car = BMW(2020, "M3", "BMW", "Blue")
 x3_car.print_all()
