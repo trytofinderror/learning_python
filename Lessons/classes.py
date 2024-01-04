@@ -15,9 +15,9 @@ class User:
         self.password = hashlib.md5(password.encode()).hexdigest()
         self.age = age
 
-    def printAll(self) -> None:
+    def print_all(self) -> None:
         print(self.first_name, self.last_name, self.email, self.password, self.age)
 
 
 user = User("John", "Doe", "<EMAIL>", "1qazxsw2!QAZXSW@", 18)
-user.printAll()
+user.print_all()
